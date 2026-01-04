@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Osobní vizitka | Tomáš Korolus</title>
+  <meta name="description" content="Moderní osobní one-page vizitka – IT student, developer, tvůrce." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>Tomáš Korolus</h1>
+  <p>IT student • Developer • Creator</p>
+  <a href="#about" class="btn">Poznat víc</a>
+</header>
+
+<main>
+
+<section id="about" class="section">
+  <h2>O mně</h2>
+  <p>
+    Jsem student IT, který se zajímá o weby, technologie a moderní design.
+    Tento web je ukázkou mých schopností.
+  </p>
+</section>
+
+<section id="skills" class="section">
+  <h2>Dovednosti</h2>
+  <div class="skills">
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>JavaScript</span>
+    <span>GitHub</span>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projekty</h2>
+  <div class="cards">
+    <div class="card">One-Page Web</div>
+    <div class="card">Školní projekt</div>
+    <div class="card">Experimentální design</div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Kontakt</h2>
+  <p>Email: <a href="mailto:email@email.cz">tomas.korolus024@skolavdf.cz</a></p>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 – vytvořeno jako školní projekt</p>
+</footer>
+
+<script src="script.js"></script>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f0f1a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: radial-gradient(circle at top, #5f00ff, #0f0f1a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero p {
+  margin: 1rem 0;
+  opacity: 0.8;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 12px 30px;
+  background: #5f00ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #7a2cff;
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 10%;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #1a1a2e;
+  padding: 10px 18px;
+  margin: 6px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #5f00ff;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a2e;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #5f00ff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+</style>
+</body>
+</html>
