@@ -13,4 +13,4 @@ Moderní jednostránkový web vytvořený jako školní projekt do soutěže 2IT
 - Moderní UI
 
 ## Spuštění
-Stačí otevřít soubor index.html v prohlížeči.
+Stačí otevřít soubor index2.html v prohlížeči.
