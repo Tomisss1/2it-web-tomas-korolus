@@ -13,8 +13,8 @@ Moderní jednostránkový web vytvořený jako školní projekt do soutěže 2IT
 - Moderní UI
 
 
-Minecraft WEB Project
-## Spuštění
+## Minecraft WEB Project
+Spuštění
 Stačí otevřít soubor index2.html v prohlížeči.
 
 minecraft-field-guide/
