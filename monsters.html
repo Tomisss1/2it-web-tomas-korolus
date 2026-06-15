@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestiář monster | Minecraft Field Guide</title>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Hlavní navigace">
+            <div class="logo" style="color: #4caf50; font-weight: bold; font-size: 1.5rem;">MC:GUIDE</div>
+            <ul class="nav-links">
+    <li><a href="index.html">Biomy</a></li>
+    <li><a href="monsters.html">Monstra</a></li>
+    <li><a href="gameplay.html">Mechaniky & Pohyb</a></li>
+    <li><a href="items.html">Itemy & Výbava</a></li>
+    <li><a href="o-projektu.html">O projektu</a></li>
+</ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Bestiář monster</h1>
+        <p>Filtruj stvoření podle jejich chování vůči hráči.</p>
+
+        <div class="filter-buttons" style="margin: 2rem 0; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn active" data-filter="all" aria-pressed="true">Všechna</button>
+            <button class="btn" data-filter="passive" aria-pressed="false">Pasivní</button>
+            <button class="btn" data-filter="hostile" aria-pressed="false">Agresivní</button>
+        </div>     
+
+        <div class="grid-layout" id="monsters-grid">
+
+<article class="card" data-category="passive">
+    <img src="assets/images/monsters/sheep.png" alt="Bílá kostičkovaná ovce stojící na trávě" class="card-img" loading="lazy">
+    <div class="card-content">
+        <h2>Ovce (Sheep)</h2>
+        <span class="badge passive" style="background: #388e3c; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">Pasivní</span>
+        <p style="margin-top: 1rem;">Zdroj vlny a skopového masa. Vlnu z ní můžeš získat buď ostříháním nůžkami, nebo jejím poražením. Vyskytuje se v mnoha barevných variantách.</p>
+    </div>
+</article>
+
+<article class="card" data-category="passive">
+    <img src="assets/images/monsters/pig.png" alt="Růžové kostičkované prase s typickým rypákem" class="card-img" loading="lazy">
+    <div class="card-content">
+        <h2>Prase (Pig)</h2>
+        <span class="badge passive" style="background: #388e3c; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">Pasivní</span>
+        <p style="margin-top: 1rem;">Tradiční hospodářské zvíře, které po poražení poskytuje vepřové maso. Pokud na něj nasadíš sedlo, můžeš na něm jezdit pomocí mrkve na udici.</p>
+    </div>
+</article>   
+            
+<article class="card" data-category="hostile">
+    <img src="assets/images/monsters/creeper.png" alt="Zelený čtyřnohý Creeper s pixelovou texturou" class="card-img" loading="lazy">
+    <div class="card-content">
+        <h2>Creeper</h2>
+        <span class="badge hostile" style="background: #d32f2f; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">Agresivní</span>
+        <p style="margin-top: 1rem;">Tichý běžec, který se přiblíží k hráči a exploduje. Sssss...</p>
+    </div>
+</article>
+
+<article class="card" data-category="passive">
+    <img src="assets/images/monsters/cow.webp" alt="Hnědo-bílá kostičkovaná kráva" class="card-img" loading="lazy">
+    <div class="card-content">
+        <h2>Kráva (Cow)</h2>
+        <span class="badge passive" style="background: #388e3c; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">Pasivní</span>
+        <p style="margin-top: 1rem;">Užitečné zvíře poskytující kůži, maso a mléko. Je zcela neškodná.</p>
+    </div>
+</article>
+
+<article class="card" data-category="hostile">
+    <img src="assets/images/monsters/zombie.png" alt="Zelený nemrtvý Zombie v modrém oblečení" class="card-img" loading="lazy">
+    <div class="card-content">
+        <h2>Zombie</h2>
+        <span class="badge hostile" style="background: #d32f2f; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">Agresivní</span>
+        <p style="margin-top: 1rem;">Klasický nemrtvý tvor, který útočí zblízka. Na přímém slunci začne hořet, ale v noci nebo v jeskyních tě nenechá na pokoji.</p>
+    </div>
+</article>
+
+<article class="card" data-category="hostile">
+    <img src="assets/images/monsters/skeleton.png" alt="Kostlivec s lukem připraveným ke střelbě" class="card-img" loading="lazy">
+    <div class="card-content">
+        <h2>Kostlivec (Skeleton)</h2>
+        <span class="badge hostile" style="background: #d32f2f; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">Agresivní</span>
+        <p style="margin-top: 1rem;">Zákeřný dálkový bojovník vybavený lukem. Dokáže tě zasáhnout z dálky a stejně jako zombie na slunci uhoří.</p>
+    </div>
+</article>
+</div>
+</main>
+
+<script src="js/filter.js"></script>
+</body>
+</html>
