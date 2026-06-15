@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Tomisss1.github.io/minecraft-field-guide/sitemap.xml
