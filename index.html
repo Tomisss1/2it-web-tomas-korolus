@@ -3,64 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Co je Cloudflare? (Dark Edition)</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Minecraft Field Guide | Průvodce světem kostek</title>
+    <meta name="description" content="Interaktivní encyklopedie Minecraft biomů a monster. Optimalizovaný web pro fanoušky a hráče.">
+    
+    <meta property="og:title" content="Minecraft Field Guide">
+    <meta property="og:description" content="Objevuj biomy a monstra v interaktivním průvodci.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
 
     <header>
-        <div class="container header-content">
-            <div class="logo-area">
-                <span class="logo-icon">☁️</span>
-                <h1>Cloudflare</h1>
-            </div>
-            <p class="subtitle">Průvodce globální sítí pro bezpečnost a rychlost webu</p>
-        </div>
+        <nav aria-label="Hlavní navigace">
+            <div class="logo">MC:GUIDE</div>
+            <ul class="nav-links">
+    <li><a href="index.html">Biomy</a></li>
+    <li><a href="monsters.html">Monstra</a></li>
+    <li><a href="gameplay.html">Mechaniky & Pohyb</a></li>
+    <li><a href="items.html">Itemy & Výbava</a></li>
+    <li><a href="o-projektu.html">O projektu</a></li>
+</ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <div class="grid">
-            <section class="card main-info">
-                <h2>Co je Cloudflare?</h2>
-                <p>Cloudflare je globální síťová platforma, která funguje jako ochranný a optimalizační štít mezi webovým serverem a koncovými uživateli. Poskytuje širokou škálu služeb zaměřených na bezpečnost, rychlost a spolehlivost internetových stránek a aplikací. Díky obrovské síti datacenter po celém světě dokáže efektivně směřovat internetový provoz a chránit infrastrukturu před útoky.</p>
-            </section>
+<main class="container" id="main-content">
+        <section class="hero">
+            <h1>Minecraft Field Guide</h1>
+            <p>Tvůj ultimátní průvodce všemi biomy a nebezpečnými tvory.</p>
+        </section>
 
-            <section class="card main-info">
-                <h2>K čemu Cloudflare slouží?</h2>
-                <p>Jednoduše řečeno, Cloudflare slouží k tomu, aby byly webové stránky pro běžné návštěvníky rychlejší a pro jejich majitele bezpečnější. Funguje jako prostředník (tzv. reverzní proxy), který kontroluje a filtruje veškerý přicházející provoz. Škodlivé návštěvníky a roboty zablokuje ještě předtím, než stihnou web zahltit, zatímco běžným uživatelům naservíruje obsah z nejbližšího možného serveru, což výrazně zrychluje načítání.</p>
-            </section>
+        <section class="biomes-section">
+            <h2>Prozkoumej Biomy</h2>
+            <div class="grid-layout">
+
+                <section class="card">
+                    <img src="assets/images/biomes/plains.png" alt="Krajina biomu Plains" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h2>Plains (Pláně)</h2>
+                        <p>Otevřený, převážně rovinatý biom plný trávy, květin a stád zvířat. Ideální místo pro začátek stavby tvé první základny.</p>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <img src="assets/images/biomes/nether.png" alt="Pekelná krajina biomu Nether" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h2>The Nether (Podsvětí)</h2>
+                        <p>Nebezpečná dimenze plná lávy, ohně a unikátních materiálů. Vstup jen na vlastní nebezpečí a s dobrým brněním!</p>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <img src="assets/images/biomes/Savana.png" alt="Suchá krajina biomu Savanna s akáciemi" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h2>Savanna (Savana)</h2>
+                        <p>Vyprahlý a horký biom charakteristický svou nažloutlou trávou a pokroucenými akáciovými stromy. Často zde narazíš na stáda lam a koní.</p>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <img src="assets/images/biomes/snow.png" alt="Zasněžená krajina s jehličnatými stromy" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h2>Snowy Tundra (Zasněžená krajina)</h2>
+                        <p>Mrazivý biom pokrytý vrstvami sněhu a ledu. Můžeš zde potkat lední medvědy, toulavé kostlivce (Strays) nebo si postavit sněhového golema.</p>
+                    </div>
+                </section>
+
+                <section class="biomes-section">
         </div>
+</section>
 
-        <section class="card services-section">
-            <h2>Vybrané služby Cloudflare</h2>
-            
-            <div class="services-grid">
-                <div class="service-box">
-                    <div class="service-icon">⚡</div>
-                    <h3>Cloudflare CDN</h3>
-                    <p>Tato služba ukládá statický obsah webu do mezipaměti na serverech po celém světě, aby se stránky uživatelům načítaly z geograficky nejbližšího místa s minimálním zpožděním.</p>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">🛡️</div>
-                    <h3>DDoS ochrana</h3>
-                    <p>Účelem této služby je neustále analyzovat síťový provoz a automaticky blokovat masivní útoky zaměřené na přetížení a vyřazení webového serveru z provozu.</p>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">🌐</div>
-                    <h3>Správa DNS</h3>
-                    <p>Tato služba poskytuje jeden z nejrychlejších a nejbezpečnějších DNS systémů na světě, který překládá webové adresy na IP adresy s minimální odezvou.</p>
-                </div>
-            </div>
+            </div> 
         </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>Zpracováno v rámci školního zadání za pomoci generativní AI. 2026</p>
-        </div>
-    </footer>
-
-</body>
-</html>
