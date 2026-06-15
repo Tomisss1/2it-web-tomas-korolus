@@ -1,0 +1,139 @@
+/* Globální nastavení pro tmavý režim */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
+    background-color: #0b0f19; /* Velmi tmavě modrá */
+    color: #cbd5e1; /* Světle šedé písmo pro dobrou čitelnost */
+    padding-bottom: 60px;
+}
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Hlavička s neonovým přechodem */
+header {
+    background: radial-gradient(circle at top right, rgba(243, 128, 32, 0.15), transparent), 
+                radial-gradient(circle at top left, rgba(31, 41, 55, 0.5), transparent);
+    border-bottom: 1px solid #1e293b;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -1px;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Rozložení obsahu do mřížky (Grid) */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Styl pro karty */
+.card {
+    background-color: #111827; /* Tmavé pozadí karet */
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 35px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: #f38020; /* Oranžový border při najetí myší */
+    transform: translateY(-2px);
+}
+
+.card h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+}
+
+/* Služby - třísloupcová mřížka */
+.services-section {
+    margin-top: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.service-box {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    padding: 25px;
+    height: 100%;
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    color: #f38020; /* Oficiální Cloudflare oranžová */
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.service-box p {
+    font-size: 0.95rem;
+    color: #9ca3af;
+}
+
+/* Patička */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #6b7280;
+    font-size: 0.85rem;
+    border-top: 1px solid #1e293b;
+    margin-top: 60px;
+}
